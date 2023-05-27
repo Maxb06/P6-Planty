@@ -7,3 +7,56 @@ Template: neve
 Version: 3.5.8
 */
 
+/* FOOTER */
+
+.left p {                   /* RETRAIT slogan WP NEVE Footer */
+	visibility: hidden;
+}
+
+/* "bannière planty canette page 1 */ 
+
+.bloc-parent-accueil {  	
+    position: relative;  
+  	background: #ECE2DA;
+  	border-bottom-left-radius: 50% 10%;  /* courbe 1 */
+  	border-bottom-right-radius: 50% 10%;
+	border-bottom:  2px solid #E3D9D0;   
+} 
+
+.branche-gauche { 
+	z-index: 1;
+	position: relative;	
+    left: 75%;
+}
+
+.canette { 
+	z-index: 2;
+	position: relative; 	
+} 
+
+.branche-droite {  
+	z-index: 1;
+	position: relative;
+	right: 75%;
+}
+
+/* section fruits */
+
+.rangee-un {
+    display: flex;
+    justify-content: center;  
+}
+
+.rangee-deux {
+    display: flex;
+    justify-content: center;  
+ }
+
+.section-deux-sep {
+    position: relative;
+    background: #ECE2DA;
+    border-bottom-left-radius: 50% 5%; /* courbe 2 */
+  	border-bottom-right-radius: 50% 5%;
+}
+
+/* classe  : bouton-commande-home */
