@@ -66,10 +66,16 @@ Version: 3.5.8
 .bouton-commande-home a {
     font-weight: 400;
     font-size: 15px;
+	width: 198px;
+	height: 55px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
 }
 
+
 .bouton-commande-home a:hover {
-	background-color: #C02E44 !important;
+	background-color: #C02E44 !important;  /* nécessaire pour la couleur du :hover */
 }
 
 /* PAGE 2 */
