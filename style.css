@@ -45,13 +45,11 @@ Version: 3.5.8
 .rangee-un {
     display: flex;
     justify-content: center;  
-	
 }
 
 .rangee-deux {
     display: flex;
     justify-content: center;  
-	
  }
 
 .section-deux-sep {
@@ -79,3 +77,99 @@ Version: 3.5.8
 }
 
 /* PAGE 2 */
+
+/* Haut de page */
+
+.haut-de-page-deux {
+	position: relative;
+	border-bottom-left-radius: 50% 15%;
+  	border-bottom-right-radius: 50% 15%;
+	background: #ECE2DA;
+}
+
+.image-hdp {
+	position: absolute;
+	top: 6%;
+	right: 75%;	
+}
+
+/* section équipe */
+
+.section-equipe {
+	position: relative;
+}
+
+.branche-equipe {
+	position: absolute;
+	bottom: 0%;
+	left: 80%;	
+}
+
+.bloc-equipe, 
+.megane, 
+.brooke, 
+.sylvie {
+	display: flex;
+	justify-content: center;	
+}
+
+/* FORMULAIRE PAGE 2 */
+
+.form-page2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	z-index: 2;
+}
+
+.contact-form {
+	max-width: 100%;
+}
+
+.contact-form label {
+	font-size: 20px;
+}
+
+.contact-nom,
+.contact-email {
+	height: 71px;
+	max-width: 383px;
+	border-radius: 7px !important;
+}
+
+.contact-message {
+	resize: none;
+	height: 237px;
+	max-width: 383px;
+	border-radius: 7px;
+}
+
+.contact-envoi {
+	width: 198px;
+ 	height: 55px;
+	background-color: #E0B9B4 !important;
+	font-size: 15px !important;
+	font-weight: 400 !important;
+	color: white !important;
+	border-radius: 5px !important;
+}
+
+.contact-envoi:hover {
+	background-color: #C02E44 !important;
+}
+
+.deco-page2 {
+	position: absolute;
+	bottom: 17%;
+	right: 56%;
+	z-index: 1;
+}
+
+@media screen and (max-width: 800px) {
+	.deco-page2 {
+	  visibility: hidden;
+	}
+  }
+
+/* PAGE 3 */
