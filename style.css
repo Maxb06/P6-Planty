@@ -7,13 +7,26 @@ Template: neve
 Version: 3.5.8
 */
 
-/* FOOTER */
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&display=swap');
+
+
+/* Header */
+
+.button-primary  {
+	width: 236px;
+}
+
+#menu-item-835 {
+	visibility: hidden;
+}
+
+/* Footer */
 
 .left p {                   /* RETRAIT slogan WP NEVE Footer */
 	visibility: hidden;
 }
 
-/* "bannière planty canette page 1 */ 
+/* PAGE ACCUEIL "bannière planty canette page 1 */ 
 
 .bloc-parent-accueil {  	
     position: relative;  
@@ -59,7 +72,7 @@ Version: 3.5.8
   	border-bottom-right-radius: 50% 5%;
 }
 
-/* classe  : bouton-commande-home */
+/* bouton commande page accueil */
 
 .bouton-commande-home a {
     font-weight: 400;
@@ -70,7 +83,6 @@ Version: 3.5.8
 	display: flex;
 	justify-content: center;
 }
-
 
 .bouton-commande-home a:hover {
 	background-color: #C02E44 !important;  /* nécessaire pour la couleur du :hover */
@@ -173,3 +185,113 @@ Version: 3.5.8
   }
 
 /* PAGE 3 */
+
+.titre-p3 {
+	border-top: solid 2px#fff;
+	padding: 40px 0 !important;
+	width: 50% !important;
+	text-align: left;
+	margin: 0 auto !important;	
+}
+
+/* rangées images fruits */
+
+.rangee-fruits-p3 {
+	width: 50%;
+	margin: 0 auto !important;	
+	
+}
+
+/* FORMULAIRE Sélections fruits */
+
+.select-fruits {	
+	display: flex;
+	gap: 34px;
+    border-bottom: solid 2px #fff;
+}
+
+.select-qty {
+	width: 92px;
+	height: 56px;
+	border-radius: 5px !important;
+}
+
+.select-ok {
+	background-color: #E0B9B4 !important;
+	width: 110px;
+	height: 56px;
+	color: white !important;
+	border-radius: 5px !important;
+}
+
+.select-ok:hover {
+	background-color: #C02E44 !important;
+}
+
+.selecteur-fruit {
+	display: flex;
+	gap: 10px;
+}
+
+/* Partie formulaire Gauche / Droite */
+
+.form-gd {
+	display: flex;
+}
+
+.select-fruits,
+.form-gd {
+	width: 50%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.gauche {
+	width: 50%;
+    border-right: solid 2px #fff;
+}
+
+.droite {
+	width: 50%;
+}
+
+.gauche, .droite {
+	padding: 30px;
+	text-align: left;
+	color: #fff;
+}
+
+.gauche label,
+.droite label {
+	width: 100%;
+}
+
+.gauche .wpcf7-text,
+.droite .wpcf7-text {
+	background-color: #fff;
+	height: 70px; 
+	border-radius: 7px;	
+	width: 100%;
+}
+
+.form-gd .gauche .droite {
+	display: flex;
+	justify-content: left;
+}
+
+.lien-bouton-p3  {
+	display: flex;
+	justify-content: center;
+}
+
+#bouton-commande-p3 {
+  	background: #E0B9B4;
+	border-radius: 5px;
+	width: 198px;
+	height: 55px;
+	color: white;
+}
+
+#bouton-commande-p3:hover {
+	background: #C02E44;
+}
