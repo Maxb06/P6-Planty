@@ -282,6 +282,7 @@ Version: 3.5.8
 .lien-bouton-p3  {
 	display: flex;
 	justify-content: center;
+	margin-left: 60px;
 }
 
 #bouton-commande-p3 {
