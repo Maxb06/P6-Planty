@@ -16,10 +16,6 @@ Version: 3.5.8
 	width: 236px;
 }
 
-#menu-item-835 {
-	visibility: hidden;
-}
-
 /* Footer */
 
 .left p {                   /* RETRAIT slogan WP NEVE Footer */
@@ -165,6 +161,7 @@ Version: 3.5.8
 	font-weight: 400 !important;
 	color: white !important;
 	border-radius: 5px !important;
+	margin-left: 60px;
 }
 
 .contact-envoi:hover {
@@ -199,7 +196,6 @@ Version: 3.5.8
 .rangee-fruits-p3 {
 	width: 50%;
 	margin: 0 auto !important;	
-	
 }
 
 /* FORMULAIRE Sélections fruits */
