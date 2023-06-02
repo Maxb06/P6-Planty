@@ -11,3 +11,17 @@ function theme_enqueue_styles() {
 
 }
 
+// public 'theme_location' => string 'primary' (length=7)
+
+function admin_link( $items, $args ) {
+  
+  if (is_user_logged_in()) {
+    $items .= '<li><a href="'.get_admin_url().'">Admin</a></li>';
+  }
+  return $items;
+}
+
+add_filter( 'wp_nav_menu_items', 'admin_link', 10, 2 ); 
+
+
+
