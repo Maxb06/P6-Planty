@@ -9,7 +9,6 @@ Version: 3.5.8
 
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&display=swap');
 
-
 /* Header */
 
 .button-primary  {
@@ -97,8 +96,8 @@ Version: 3.5.8
 
 .image-hdp {
 	position: absolute;
-	top: 6%;
-	right: 75%;	
+	top: 10%;
+	right: 74%;	
 }
 
 /* section équipe */
@@ -170,14 +169,44 @@ Version: 3.5.8
 
 .deco-page2 {
 	position: absolute;
-	bottom: 17%;
-	right: 56%;
+	bottom: 18%;
+	right: 55%;
 	z-index: 1;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1220px) {
+	.h4-p1 {
+	  font-size: 20px !important;
+	}
+  }
+
+/* MEDIA QUERIES Page 2 */
+
+@media screen and (max-width: 500px) {
+	.titre-p2 {
+		font-size: 25px !important;
+	}
+  }
+
+@media screen and (max-width: 1180px) {
+	.image-hdp {
+		width: 150px;
+		height: 300px;
+		top: 10%;
+		right: 70%;
+	}
+  }
+
+@media screen and (max-width: 1430px) {
 	.deco-page2 {
 	  visibility: hidden;
+	}
+  }
+
+@media screen and (max-width: 400px) {
+	.contact-form input,
+	.contact-message {
+	  width: 310px;
 	}
   }
 
@@ -186,99 +215,130 @@ Version: 3.5.8
 .titre-p3 {
 	border-top: solid 2px#fff;
 	padding: 40px 0 !important;
-	width: 50% !important;
-	text-align: left;
+	width: 46% !important;	
 	margin: 0 auto !important;	
 }
 
 /* rangées images fruits */
 
 .rangee-fruits-p3 {
-	width: 50%;
-	margin: 0 auto !important;	
+	width: 100%;
+	margin: 0 auto;	
+	max-width: 880px;			
 }
 
-/* FORMULAIRE Sélections fruits */
+/* FORMULAIRE sélection qté */
 
-.select-fruits {	
+input[type=number]::-webkit-inner-spin-button {  /* enlever les fleches natives du sélecteur de quantité */
+	-webkit-appearance: none;
+}
+
+#formulaire-commande {
+	max-width: 880px;
+	margin: 0 auto;
+    width: 100%;
+}
+
+.select-fruits { 
 	display: flex;
-	gap: 34px;
-    border-bottom: solid 2px #fff;
-}
-
-.select-qty {
-	width: 92px;
-	height: 56px;
-	border-radius: 5px !important;
-}
-
-.select-ok {
-	background-color: #E0B9B4 !important;
-	width: 110px;
-	height: 56px;
-	color: white !important;
-	border-radius: 5px !important;
-}
-
-.select-ok:hover {
-	background-color: #C02E44 !important;
+	border-bottom: solid 2px #fff;
+	margin-bottom: 40px;
+	gap: 30px;
 }
 
 .selecteur-fruit {
 	display: flex;
-	gap: 10px;
+	gap: 12px;
 }
 
-/* Partie formulaire Gauche / Droite */
+.selectqty {
+	display: flex;
+}
+
+.plus-moins {
+	background-color: #DC9F96;
+	border-radius: 0px 14px 14px 0px;
+	width: 31px;	
+	height: 56px;
+	text-align: center;
+}
+
+.select-qty {
+	border: 1px solid #FFFF;
+	border-radius: 14px 0px 0px 14px !important;
+	width: 51px;	
+	height: 56px;
+}
+
+.quantity_wanted_up,
+.quantity_wanted_down {
+	color: #ffff;
+	font-size: 20px;
+}
+
+.quantity_wanted_down {
+	border-top: 1px solid #fff;
+	display: block;
+	border-top: 1px solid #fff;
+	width: 100%;
+}
+
+.select-ok {
+	background: #E0B9B4 !important;
+	border-radius: 5px !important;
+	width: 100px;
+	height: 56px;
+	color: #fff !important;
+}
+
+.select-ok:hover {
+	background: #C02E44 !important;
+}
+
+/* Formulaire partie Gauche / Droite */
 
 .form-gd {
 	display: flex;
 }
 
-.select-fruits,
-.form-gd {
-	width: 50%;
-    margin: 0 auto;
-    margin-bottom: 50px;
-}
-
-.gauche {
+.rang-gauche {
 	width: 50%;
     border-right: solid 2px #fff;
+	padding-left: 5px !important;
 }
 
-.droite {
+.rang-droite {
 	width: 50%;
 }
 
-.gauche, .droite {
-	padding: 30px;
+.rang-gauche, 
+.rang-droite {
+    padding: 44px;
+    color: #fff;
+}
+
+.form-gd p {
 	text-align: left;
-	color: #fff;
 }
 
-.gauche label,
-.droite label {
-	width: 100%;
+.rang-gauche h2,
+.rang-droite h2 {
+	text-align: left;
 }
 
-.gauche .wpcf7-text,
-.droite .wpcf7-text {
-	background-color: #fff;
-	height: 70px; 
-	border-radius: 7px;	
-	width: 100%;
-}
-
-.form-gd .gauche .droite {
-	display: flex;
-	justify-content: left;
+.form-gd input {
+	border-radius: 7px !important;
+	width: 388px;
+	height: 71px;	
 }
 
 .lien-bouton-p3  {
+	width: 860px;
+	max-width: 100%;
 	display: flex;
 	justify-content: center;
-	margin-left: 60px;
+	margin: 0 auto;
+	padding: 40px 0 0 64px;
 }
 
 #bouton-commande-p3 {
@@ -292,3 +352,58 @@ Version: 3.5.8
 #bouton-commande-p3:hover {
 	background: #C02E44;
 }
+
+/* page 3 Media Queries */
+
+@media screen and (max-width: 470px) {
+	.h1-p3 {
+	  font-size: 25px !important;
+	}
+  }
+
+  @media screen and (max-width: 1520px) {
+	.rangee-fruits-p3 p {
+	  font-size: 1rem !important;
+	}
+  }
+
+  @media screen and (max-width: 782px) {
+	.rangee-fruits-p3 {
+		width: 100%;
+	}
+  }
+
+  @media screen and (max-width: 870px) {
+	.select-fruits {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	}
+  }
+
+  @media screen and (max-width: 820px) {
+	.form-gd {
+	  display: flex;
+	  flex-direction: column;  
+	}
+  }
+  
+  @media screen and (max-width: 820px) {
+	.rang-gauche {
+	  border-style: hidden;
+	}
+  }
+
+  @media screen and (max-width: 820px) {
+	.rang-droite {
+	  border-top: 1px solid #fff;
+	  width: 500px;
+	  max-width: 100%;
+	}
+  }
+
+  @media screen and (max-width: 420px) {
+	.form-gd input {
+	  width: 268px;
+	}
+  }
